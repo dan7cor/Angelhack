@@ -26,7 +26,7 @@ session_start();
       <p><button class="button" style="vertical-align:middle" id="enemy_base"><span><a href="escape.php">RUN</a></span></button></p>
       
     </div>  
-    <img src="Game images/enemy_base_underground_floor_1.png" class="map">  
+    <img src="Game images/enemy_base_underground_floor_1.png" class="map" style="right: 1300px">  
     
     
 

@@ -28,8 +28,8 @@ session_start();
       <button class="button" style="vertical-align:middle" id="enemy_base"><span><a href="quiet.php">Silently</a></span></button></p>
 
     </div> 
-    <img src="Game images/enemy_base_1_floor_5.png" class="map" style="right: 1300px"> 
-    <img src="Game images/enemy_base_underground_floor.png" class="map">  
+    <img src="Game images/enemy_base_1_floor_5.png" class="map" > 
+    <img src="Game images/enemy_base_underground_floor.png" class="map" style="right: 1300px">  
     
 
 </body>
