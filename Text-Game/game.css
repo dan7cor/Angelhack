@@ -1,0 +1,241 @@
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Special Elite'), local('SpecialElite-Regular'), url(http://themes.googleusercontent.com/static/fonts/specialelite/v3/9-wW4zu3WNoD5Fjka35Jm4kaQb-UsZVONjobs91YQtw.woff) format('woff');
+}
+
+html,
+body {
+    font-family         : "Special Elite", "Courier New", Courier, monospace;
+    font-size           : 16px;
+    color               : #000;
+    background-color    : #F8F8F8;
+    background-image    : url(coffee.png), url(background.jpg);
+    /* coffee stain thanks to http://kitamikeita.deviantart.com/art/10-Coffee-Stains-PNG-208843978 */
+    background-repeat   : no-repeat, repeat;
+    background-position : bottom right, center center;
+    margin              : 0;
+    padding             : 0;
+    height              : 100%;
+    overflow            : hidden;
+}
+a {
+    color           : #000;
+    text-decoration : none;
+    border-bottom   : 1px solid #aaa;
+}
+p {
+    margin-top    : 25px;
+    margin-bottom : 25px;
+}
+
+
+#story {
+    display       : block;
+    margin-bottom : 10px;
+    width         : 800px;
+    margin-left   : auto;
+    margin-right  : auto;
+    margin-bottom : 70px;
+    height        : 80%;
+}
+
+
+#title {
+    font-size     : 24px;
+    font-weight   : bold;
+    color         : #000;
+    margin-bottom : 10px;
+    width         : 800px;
+    margin-left   : auto;
+    margin-right  : auto;
+    margin-bottom : 70px;
+    text-align    : left;
+    border-bottom : 2px solid black
+}
+
+
+
+#footer {
+    bottom    : 10px;
+    font-size : 12px;
+    position  : fixed;
+    right     : 20px;
+}
+
+#MO1{
+    display : none;
+}
+
+#MO2{
+    display : none;
+}
+
+#MO3{
+    display : none;
+}
+
+#Final{
+    display:none;
+}
+
+/*-----------------------------------------------------------------------------------------------------------------------------*/
+
+/* Dropdown Button */
+.dropbtn {
+    font-family         : "Special Elite", "Courier New", Courier, monospace;
+    font-size           : 16px;
+    background-color: #F8F8F8;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #ccffcc;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1ff;
+    cursor:pointer;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* ---------------------------------------------------------------------------------------------------------------------------*/
+
+/* Create the button Css */
+
+.button {
+    font-family         : "Special Elite", "Courier New", Courier, monospace;
+    display             : inline-block;
+    border-radius       : 3px;
+    background-color    : #F8F8F0;
+    border              : none;
+    color               : black;
+    text-align          : center;
+    font-size           : 16px;
+    padding             : 10px;
+    width               : 200px;
+    transition          : all 0.5s;
+    cursor              : pointer;
+    margin              : 5px;
+}
+
+.button:hover{
+    background-color    : #ff9999;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button #front span:before {
+  content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#mission_button{
+    display: none;
+}
+
+#start_button{
+    display: none;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------*/
+
+/* images on the mission page*/
+
+#map1:hover{
+    -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(5);
+  -ms-transform: scale(5); /* IE 9 */
+  -webkit-transform: scale(5); /* Safari and Chrome */
+}
+#map2:hover{
+    -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+  opacity: 1;
+  transform: scale(5);
+  -ms-transform: scale(5); /* IE 9 */
+  -webkit-transform: scale(5); /* Safari and Chrome */
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.map{
+  display       : block;
+  margin-bottom : 10px;
+  width         : 600px;
+  margin-left   : auto;
+  margin-right  : auto;
+  margin-bottom : 70px;
+  height        : 500px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+}
